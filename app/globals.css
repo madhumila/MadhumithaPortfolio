@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@700&family=Poppins:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@layer components{
+  .nav-link{
+    @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#a855f7] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center hidden
+  }
+  .nav-link-mobile{
+    @apply relative  mb-[2rem] font-semibold text-white cursor-pointer text-[27px] w-fit md:block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#a855f7] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center 
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, rgb(192,132,252), #f765a3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.gradient-bg{
+  background: linear-gradient(to right,#f19ec1, rgb(192,132,252) );
+
+}
+.heading{
+  @apply text-center text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold 
+}
+.gradient-blue{
+  background: linear-gradient(to right,#1f0568,#5f35cf, #db4986 );
+}
+.gradient-orange{
+  background: linear-gradient(to right,#d86609,#cf9135, #db4986 );
+}
+.gradient-red{
+  background: linear-gradient(to right,#750909,#cf3535, #db4986 );
+}
